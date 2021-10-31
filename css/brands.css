@@ -4,7 +4,7 @@
  */
 
 @font-face {
-    font-family: 'Font Awesome 5 Brands';
+    font-family: 'Font Awesome 5 Brands Regular';
     font-style: normal;
     font-weight: 400;
     font-display: block;
@@ -13,6 +13,6 @@
 }
 
 .fab {
-    font-family: 'Font Awesome 5 Brands';
+    font-family: 'Font Awesome 5 Brands Regular';
     font-weight: 400;
 }
