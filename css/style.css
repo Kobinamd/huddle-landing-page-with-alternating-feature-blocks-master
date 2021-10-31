@@ -1,0 +1,433 @@
+:root {
+    --Pink: hsl(322, 100%, 66%);
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+    --headings: 'Poppins', sans-serif;
+    --body-callc: 'Open Sans', sans-serif;
+}
+
+
+/* font-family: 'Open Sans', sans-serif;
+
+font-family: 'Poppins', sans-serif; */
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0;
+}
+
+
+/* typography */
+
+body {
+    font-family: var(--body-callc);
+}
+
+h1,
+h2 {
+    font-family: var(--headings);
+    font-size: 1.35rem;
+    font-weight: 600;
+    line-height: 1.45;
+    padding: 1em 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+p {
+    font-size: 0.935rem;
+    line-height: 1.5;
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+}
+
+
+/* nav */
+
+.navbar {
+    position: absolute;
+    display: flex;
+    padding: 2em;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.logo {
+    /* width: 30%; */
+    height: 20px;
+}
+
+.nav-btn {
+    background-color: #fff;
+    padding: 0.3rem 1rem;
+    border-radius: 50px;
+    color: #000;
+    box-shadow: 0.5px 0 20px 0.5px rgba(170, 170, 170, 0.719);
+    font-size: 0.735rem;
+    font-weight: 700;
+    transition: all 0.3s;
+    /* width: 30%; */
+}
+
+.pink-btn {
+    margin: 2em 0;
+    background-color: var(--Pink);
+    padding: 0.9rem 3rem;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 0.735rem;
+    font-weight: 700;
+    transition: all 0.3s;
+    /* width: 30%; */
+}
+
+.pink-btn:hover,
+.nav-btn:hover {
+    opacity: 0.60;
+}
+
+
+/* hero */
+
+.hero {
+    background-color: var(--Very-Pale-Cyan);
+    background-image: url(../images/bg-hero-mobile.svg);
+    background-size: cover;
+    background-position: center center;
+    padding: 2em;
+    padding-top: 10em;
+    text-align: center;
+}
+
+.hero p {
+    color: #000;
+}
+
+
+/* styling card */
+
+.card {
+    background-color: #fff;
+    margin-top: 2em;
+    padding: 2.5em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 30px 1px rgba(46, 41, 41, 0.171);
+    max-width: 95%;
+    margin: 2em auto;
+    text-align: center;
+}
+
+.card img {
+    padding: 2em 0;
+}
+
+.first {
+    margin-top: 4em;
+}
+
+.forth {
+    position: relative;
+    margin-top: 8em;
+    margin-bottom: -5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+}
+
+
+/* footer  */
+
+footer {
+    background-color: var(--Very-Dark-Cyan);
+    color: #fff;
+}
+
+
+/* last  */
+
+.last {
+    background-color: var(--Very-Dark-Cyan);
+    color: #fff;
+    padding-top: 10em;
+    max-width: 90%;
+    margin: auto;
+}
+
+.last-logo {
+    filter: brightness(0) invert(10);
+    margin-bottom: 2em;
+    width: 40%;
+}
+
+.last li {
+    list-style: none;
+    margin-top: 1.5em;
+}
+
+.last li>a:hover {
+    text-decoration: underline;
+}
+
+.last a {
+    color: #fff;
+}
+
+.location {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 1em;
+}
+
+.phone,
+.email {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1em;
+}
+
+.last p {
+    color: #fff;
+    margin-left: 1.5em;
+    text-align: left;
+}
+
+.location img {
+    margin-top: 5px;
+}
+
+.copy p {
+    font-size: 0.835rem;
+    text-align: center;
+}
+
+.footer-para {
+    padding-bottom: 1em;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--Pink);
+    transition: all 0.3s;
+}
+
+.attribution a:hover {
+    color: #fff;
+}
+
+
+/* Styling the social icon */
+
+.social {
+    margin-top: 3em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.fa-facebook::before {
+    font-family: 'Font Awesome 5 Brands Regular';
+    font-weight: 400;
+    content: "\f39e";
+    display: inline-block;
+    font-variant: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    border: solid 2px #fff;
+    border-radius: 100%;
+    padding: 0.5em 0.7em;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.fa.fa-twitter,
+.fa.fa-instagram {
+    font-family: 'Font Awesome 5 Brands Regular';
+    border: solid 2px #fff;
+    display: inline-block;
+    padding: 0.5em 0.6em;
+    border-radius: 100%;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s;
+}
+
+.fa {
+    margin-right: 1em;
+}
+
+.fa:last-child {
+    margin-right: 0;
+}
+
+.social .fa.fa-twitter:hover,
+.social .fa.fa-instagram:hover {
+    color: var(--Pink);
+    border: solid 2px var(--Pink);
+}
+
+.social .fa-facebook:hover::before {
+    color: var(--Pink);
+    border: solid 2px var(--Pink);
+}
+
+@media (min-width:750px) {
+    .hero {
+        background-image: url(../images/bg-hero-desktop.svg);
+        padding-top: 5em;
+    }
+    .container {
+        width: 90%;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    .hero-row {
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    .hero-text {
+        text-align: left;
+        width: 75%;
+        padding-top: 5em;
+        padding-right: 3em;
+    }
+    .hero-text p {
+        font-size: 1rem;
+    }
+    .hero-img {
+        width: 100%;
+    }
+    .card {
+        width: 85%;
+        max-width: 1440px;
+        max-height: 400px;
+        text-align: left;
+    }
+    .first {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .first-text {
+        text-align: left;
+        width: 100%;
+        padding-right: 10em;
+        padding-left: 5em;
+    }
+    .first-img {
+        width: 50%;
+    }
+    .second {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .second-text {
+        text-align: left;
+        width: 100%;
+        padding-left: 5em;
+    }
+    .second-img {
+        width: 50%;
+        margin-left: 5em;
+    }
+    .third {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .third-text {
+        text-align: left;
+        width: 100%;
+        padding-right: 10em;
+        padding-left: 5em;
+    }
+    .third-img {
+        width: 50%;
+    }
+    .forth {
+        width: 50%;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    .last {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .last-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    .last p {
+        font-size: 0.95rem;
+    }
+    .last-nav {
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .last-nav ul:first-child {
+        padding-right: 1em;
+    }
+    .address,
+    .last-nav,
+    .social-copy {
+        width: 30%;
+    }
+    .last-nav a {
+        font-size: 0.95rem;
+    }
+    .social-copy {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .social {
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+    .last li:first-child {
+        margin-top: 0;
+    }
+    .last-logo {
+        width: 20%;
+    }
+    .copy p {
+        font-size: 0.95rem;
+        text-align: left;
+        margin-left: 0;
+    }
+    .footer-para {
+        padding-top: 2em;
+        padding-bottom: 1em;
+    }
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+}
